@@ -1,0 +1,25 @@
+/*
+ *
+ *  Copyright (c) 2019, Federico Benedetti <fede.benedetti9@gmail.com>. All rights reserved.
+ *  
+ *  How to Unpack *.new.dat.br files.
+ */
+
+1) sudo apt install brotli
+2) brotli --decompress <filename>.new.dat.br
+ 
+ - It will give as output <filename>.new.dat
+ - You can use sdat2img to create a <filename>.img
+ - Either it can be mounted
+ 
+	3.1) mkdir system/
+	3.2) sudo mount system.img system/
+	3.3) ./extract-files.sh ~/android/system_dump/
+	3.4) sudo umount ~/android/system_dump/system
+	3.5) rm -rf ~/android/system_dump/
+
+ - Or 7zip can be used 
+	
+	4.1) sudo apt install p7zip-full
+	4.2) 7z -x <filename>.img 
+	
