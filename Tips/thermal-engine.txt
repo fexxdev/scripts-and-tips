@@ -1,0 +1,8 @@
+/*
+ *
+ *  Copyright (c) 2019, Federico Benedetti <fede.benedetti9@gmail.com>. All rights reserved.
+ *  
+ *  How to generate a thermal-engine configurations
+ */
+
+- adb shell thermal-engine –o > thermal-engine.conf
